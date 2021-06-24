@@ -5,10 +5,11 @@ export class LightSwitch extends Component {
   constructor(){
     super()
     this.state = {
-      toggled: false
+      toggled: true
     }
   }
   handleClick = () => {
+    
     this.setState(prevState => ({
       toggled: !prevState.toggled
     }))
